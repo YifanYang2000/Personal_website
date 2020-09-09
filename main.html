@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yifan yang</title>
+    <title>Yifan Yang</title>
 </head>
+
 <body>
+    <header>
+        <div class="left_nav">
+            <ul>
+                <li><span class="underline">OBJECTIVE</span></li>
+                <li><span class="underline">PROJECTS</span></li>
+                <li><span class="underline">EXPERIENCE</span></li>
+                <li><span class="underline">VOLUNTEERING</span></li>
+            </ul>
+        </div>
+
+        <div class="right_nav">
+            <ul>
+                <li><span class="underline">ABOUT</span></li>
+                <li><span class="underline">CONTACTS</span></li>
+            </ul>
+        </div>
+
+        <div class="contact_nav">
+            <ul>
+                <button class="btn"><i class="fa fa-linkedin-square"></i></button>
+                <button class="btn"><i class="fa fa-github-square"></i></button>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main_screen">
+        <div class="text_box">
+            <div class="change">YIFAN YANG.<br>I AM A<br> <span class="animate"></span>.</div>
+        </div>
     
+        <div class="welcome_box">
+            <div class="welcome_text">Welcome</div>
+            <div class="resume_button">GET MY RESUME</div>
+        </div>
+    </div>
+
+    <script>
+        var typed = new Typed('.animate', {
+            strings: [
+                "DEVELOPER^2000",
+                "TINKERER^2000",
+                "ARTIST^2000",
+                "INNOVATOR^2000"
+            ],
+            typeSpeed: 200,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
 </body>
+
 </html>
