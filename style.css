@@ -4,14 +4,18 @@
 
 html {
     height: 100%;
+    margin: 0;
 }
-
 
 body {
     margin: 0%;
     height: 100%;
-    background-color: #f0eee9;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
 }
+
+
 
 
 /* -------------------------------------- nav bar---------------------------------------- */
@@ -19,7 +23,15 @@ body {
 header {
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 1;
+}
+
+.signature {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    left: 20px;
+    top: 45px;
 }
 
 .left_nav {
@@ -34,30 +46,32 @@ header {
     position: absolute;
     right: 0;
     top: 0;
-    padding-right: 140px;
+    padding-right: 150px;
     padding-top: 35px;
     color: white;
 }
 
-.contact_nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-top: 23px;
-    padding-right: 20px;
-    color: white;
+#audioControl {
+    color: #ff4834;
+    overflow: hidden;
+    font-weight: 700;
+    padding: 7px;
+    transition: background-color 0.2s;
+}
+
+#audioControl:hover {
+    cursor: pointer;
+    color: black;
 }
 
 li {
     display: inline;
-    padding-right: 25px;
-    color: #c7c4c0;
-    font-size: 12px;
-    transition: color 0.2s;
+    padding-right: 17px;
+    color: black;
+    font-size: 10px;
 }
 
 li:hover {
-    color: #bea79a;
     cursor: pointer;
 }
 
@@ -67,13 +81,12 @@ li:hover {
     padding-bottom: 10px;
 }
 
-.underline:before
-{
+.underline:before {
     content: '';
     position: absolute;
     width: 100%;
     height: 0px;
-    border-bottom: 1px solid #bea79a;
+    border-bottom: 0.5px solid black;
     bottom: 2px;
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
@@ -82,85 +95,43 @@ li:hover {
     transition: transform 0.2s ease-in;
 }
 
-span:hover:before
-{
+.underline:hover:before {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-.btn {
-    background-color: transparent;
-    border: none;
-    color: #c7c4c0;
-    outline: none;
-    transition: color 0.2s;
-    font-size: 40px;
-    padding-left: 10px;
-}
-
-.btn:hover {
-    color: #bea79a;
-    cursor: pointer;
-}
-
-/* ---------------------------initial screen content------------------------------ */
-
-.welcome_text {
+.progress-container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    color: white;
-    font-size: 80px;
+    z-index: 2;
+    width: 1px;
+    height: 320px;
+    left: 50px;
+    top: 305px;
+    background: black;
 }
 
-.resume_button {
+.progress-bar {
+    width: 1px;
+    background: #ff4834;
+    height: 0%;
+}
+
+.side_yifan {
     position: absolute;
-    color: white;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 40px;
-    border: 2px solid white;
-    padding: 15px;
-    font-size: 12px;
+    z-index: 3;
+    font-size: 10px;
+    left: 15px;
+    top: 245px;
+    transform: rotate(-90deg);
 }
 
-.resume_button:hover {
-    cursor: pointer;
-}
 
-.text_box {
-    position: relative;
-    background-color: #f0eee9;
-    width: 60%;
-    height: 100%;
-    float: left;
-}
-
-.change {
-    left: 0;
-    top: 0;
-    padding-top: 250px;
-    padding-left: 190px;
-    font-size: 60px;
-    color: #3e3937;
-}
-
-.animate {
-    color: #bea79a;
-}
-
-.welcome_box {
-    position: relative;
-    background-color: black;
-    width: 40%;
-    height: 100%;
-    float: right;
-}
+/* ----------------------------------initial screen content------------------------------------ */
 
 .main_screen {
     height: 100%;
+    width: 100%;
 }
 
 .main_screen:after {
@@ -168,4 +139,117 @@ span:hover:before
     display: table;
     clear: both;
 }
+
+/* -------- Yifan Yang -------- */
+
+.text {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-left: 190px;
+}
+
+.change {
+    color: black;
+    font-size: 70px;
+    line-height: 82px;
+}
+
+.animate {
+    color: 	#ff4834;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    outline: none;
+    transition: color 0.2s;
+    font-size: 50px;
+    padding-right: 20px;
+    padding-left: 0px;
+    transition: color 0.2s;
+}
+
+.btn:hover {
+    color: #ff4834;
+    cursor: pointer;
+}
+
+.look {
+    font-size: 10px;
+    color: black;
+    bottom: 150px;
+}
+
+.resume_button {
+    font-weight: 700;
+    border: 2px solid #ff4834;
+    color: #ff4834;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+
+.resume_button:hover {
+    cursor: pointer;
+    background-color: #ff4834;
+    color: white;
+}
+
+
+/* -------- Statue Box -------- */
+
+.statue_arrows {
+    position: absolute;
+    width: 600px;
+    height: 725px;
+    min-width: 600px;
+    min-height: 725px;
+    top: 8%;
+    right: 8%;
+}
+
+.statue_box {
+    position: absolute;
+    width: 514px;
+    height: 725px;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url('pictures/david_good.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image:none;
+    filter:none;
+    bottom: 30%;
+    z-index: 20;
+    opacity: 1;
+ }
+
+ #myCarousel {
+     top: 28%;
+ }
+
+ .glyphicon {
+    color: #ff4834;
+    transition: color 0.2s;
+ }
+
+ .glyphicon:hover {
+    color: black;
+}
+
+ .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 20%;
+  }
+
+  .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev {
+    right: 90%;
+  }
+
 
