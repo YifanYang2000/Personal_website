@@ -18,7 +18,7 @@ body {
 
 
 
-/* -------------------------------------- nav bar---------------------------------------- */
+/* -------------------------------------- Fixed on screen --------------------------------------  */
 
 header {
     position: fixed;
@@ -26,13 +26,17 @@ header {
     z-index: 1;
 }
 
+/* ----- Home button, signature ----- */
+
 .signature {
     position: absolute;
     width: 120px;
     height: auto;
     left: 20px;
-    top: 45px;
+    top: 35px;
 }
+
+/* ----- Navigation bars ----- */
 
 .left_nav {
     position: absolute;
@@ -51,19 +55,6 @@ header {
     color: white;
 }
 
-#audioControl {
-    color: #ff4834;
-    overflow: hidden;
-    font-weight: 700;
-    padding: 7px;
-    transition: background-color 0.2s;
-}
-
-#audioControl:hover {
-    cursor: pointer;
-    color: black;
-}
-
 li {
     display: inline;
     padding-right: 17px;
@@ -73,12 +64,6 @@ li {
 
 li:hover {
     cursor: pointer;
-}
-
-.underline {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 10px;
 }
 
 .underline:before {
@@ -100,6 +85,32 @@ li:hover {
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+/* ----- Music ----- */
+
+#audioControl {
+    color: #ff4834;
+    overflow: hidden;
+    font-weight: 700;
+    padding: 7px;
+    border: 2px solid #ff4834;
+    transition: background-color 0.2s;
+}
+
+#audioControl:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #ff4834;
+}
+
+
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* ----- Progress bar ----- */
 
 .progress-container {
     position: absolute;
@@ -127,7 +138,7 @@ li:hover {
 }
 
 
-/* ----------------------------------initial screen content------------------------------------ */
+/* -------------------------------------- Introduction screen --------------------------------------  */
 
 .main_screen {
     height: 100%;
@@ -140,7 +151,7 @@ li:hover {
     clear: both;
 }
 
-/* -------- Yifan Yang -------- */
+/* -------- Introduction text -------- */
 
 .text {
     position: absolute;
@@ -161,6 +172,8 @@ li:hover {
     font-weight: 700;
     font-size: 70px;
 }
+
+/* ----- Social media buttons ----- */
 
 .btn {
     background-color: transparent;
@@ -185,6 +198,8 @@ li:hover {
     bottom: 150px;
 }
 
+/* ----- Resume ----- */
+
 .resume_button {
     font-weight: 700;
     border: 2px solid #ff4834;
@@ -200,7 +215,7 @@ li:hover {
 }
 
 
-/* -------- Statue Box -------- */
+/* --------------- Statue Box --------------- */
 
 .statue_arrows {
     position: absolute;
@@ -208,8 +223,8 @@ li:hover {
     height: 725px;
     min-width: 600px;
     min-height: 725px;
-    top: 8%;
-    right: 8%;
+    top: 9%;
+    right: 7%;
 }
 
 .statue_box {
@@ -223,16 +238,18 @@ li:hover {
     background-position: center;
 }
 
+/* ----- Carousel anime eyes ----- */
+
 .carousel-control.left, .carousel-control.right {
     background-image:none;
     filter:none;
-    bottom: 30%;
+    bottom: 33%;
     z-index: 20;
     opacity: 1;
  }
 
  #myCarousel {
-     top: 28%;
+     top: 27%;
  }
 
  .glyphicon {

@@ -1,4 +1,4 @@
-/* progression */
+/* ----- progression ----- */
 window.onscroll = function() {progression()};
 
 function progression() {
@@ -9,7 +9,7 @@ function progression() {
 }
 
 
-/* Typed */
+/* ----- Typed ----- */
 var typed = new Typed('.animate', {
     strings: [
         "DEVELOPER.^2000",
@@ -22,7 +22,7 @@ var typed = new Typed('.animate', {
     loop: true
 });
 
-/* Audio */
+/* ----- Audio ----- */
 var yourAudio = document.getElementById('yourAudio'),
     ctrl = document.getElementById('audioControl');
 
