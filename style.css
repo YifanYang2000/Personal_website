@@ -224,7 +224,7 @@ li:hover {
     min-width: 600px;
     min-height: 725px;
     top: 9%;
-    right: 7%;
+    right: 4%;
 }
 
 .statue_box {
@@ -233,7 +233,7 @@ li:hover {
     height: 725px;
     left: 50%;
     transform: translate(-50%);
-    background-image: url('pictures/david_good.png');
+    background-image: url('pictures/try_2.png');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -252,6 +252,10 @@ li:hover {
      top: 27%;
  }
 
+ .carousel-inner {
+     width: 450px;
+ }
+
  .glyphicon {
     color: #ff4834;
     transition: color 0.2s;
@@ -268,5 +272,12 @@ li:hover {
   .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev {
     right: 90%;
   }
+
+  .carousel-inner>.item {
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: -o-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+
 
 
