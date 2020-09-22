@@ -143,6 +143,7 @@ li:hover {
 .main_screen {
     height: 100%;
     width: 100%;
+    margin-bottom: 30%;
 }
 
 .main_screen:after {
@@ -212,6 +213,7 @@ li:hover {
     cursor: pointer;
     background-color: #ff4834;
     color: white;
+    text-decoration: none;
 }
 
 
