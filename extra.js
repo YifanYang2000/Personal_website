@@ -1,4 +1,4 @@
-/* ----- progression ----- */
+/* ----- Progression ----- */
 window.onscroll = function() {progression()};
 
 function progression() {
