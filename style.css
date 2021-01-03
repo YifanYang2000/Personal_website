@@ -59,7 +59,7 @@ li {
     display: inline;
     padding-right: 17px;
     color: black;
-    font-size: 10px;
+    font-size: 0.9em;
 }
 
 li:hover {
@@ -116,9 +116,9 @@ li:hover {
     position: absolute;
     z-index: 2;
     width: 1px;
-    height: 320px;
+    height: 24em;
     left: 50px;
-    top: 305px;
+    top: 27em;
     background: black;
 }
 
@@ -131,11 +131,13 @@ li:hover {
 .side_yifan {
     position: absolute;
     z-index: 3;
-    font-size: 10px;
-    left: 15px;
-    top: 245px;
+    font-size: 1em;
+    left: 3px;
+    top: 22em;
     transform: rotate(-90deg);
 }
+
+
 
 
 /* -------------------------------------- Introduction screen --------------------------------------  */
@@ -159,19 +161,19 @@ li:hover {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    padding-left: 190px;
+    padding-left: 190px;  
 }
 
 .change {
     color: black;
-    font-size: 70px;
-    line-height: 82px;
+    font-size: 7em;
+    line-height: 1em;
 }
 
 .animate {
     color: 	#ff4834;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 0.9em;
 }
 
 /* ----- Social media buttons ----- */
@@ -193,13 +195,14 @@ li:hover {
     cursor: pointer;
 }
 
-.look {
-    font-size: 10px;
-    color: black;
-    bottom: 150px;
-}
 
 /* ----- Resume ----- */
+
+.look {
+    color: black;
+    bottom: 150px;
+    font-size: 1em;
+}
 
 .resume_button {
     font-weight: 700;
@@ -221,23 +224,25 @@ li:hover {
 
 .statue_arrows {
     position: absolute;
-    width: 600px;
-    height: 725px;
-    min-width: 600px;
-    min-height: 725px;
-    top: 9%;
-    right: 4%;
+    width: 48em;
+    height: 58em;
+    min-width: 48em;
+    min-height: 58em;
+    top: 16em;
+    right: 15em;
 }
 
 .statue_box {
     position: absolute;
-    width: 514px;
-    height: 725px;
+    height: 58em;
+    width: 41.12em;
     left: 50%;
+    top: 0;
     transform: translate(-50%);
     background-image: url('pictures/try_2.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 /* ----- Carousel anime eyes ----- */
@@ -251,11 +256,12 @@ li:hover {
  }
 
  #myCarousel {
-     top: 27%;
+    top: 27.05%;
  }
 
  .carousel-inner {
-     width: 450px;
+    width: 36.1em;
+    height: 8.75em;
  }
 
  .glyphicon {
