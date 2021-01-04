@@ -18,7 +18,7 @@ body {
 
 
 
-/* -------------------------------------- Fixed on screen --------------------------------------  */
+/* ----------------------------- Fixed on screen ---------------------------  */
 
 header {
     position: fixed;
@@ -40,8 +40,6 @@ header {
 
 .left_nav {
     position: absolute;
-    left: 0;
-    top: 0;
     padding-top: 35px;
     padding-left: 150px;
 }
@@ -49,8 +47,7 @@ header {
 .right_nav {
     position: absolute;
     right: 0;
-    top: 0;
-    padding-right: 150px;
+    padding-right: 70px;
     padding-top: 35px;
     color: white;
 }
@@ -59,11 +56,17 @@ li {
     display: inline;
     padding-right: 17px;
     color: black;
-    font-size: 0.9em;
+    font-size: 12px;
 }
 
 li:hover {
     cursor: pointer;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
 }
 
 .underline:before {
@@ -103,22 +106,15 @@ li:hover {
     background-color: #ff4834;
 }
 
-
-.underline {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 10px;
-}
-
 /* ----- Progress bar ----- */
 
 .progress-container {
     position: absolute;
     z-index: 2;
     width: 1px;
-    height: 24em;
+    height: 355px;
     left: 50px;
-    top: 27em;
+    top: 370px;
     background: black;
 }
 
@@ -131,16 +127,17 @@ li:hover {
 .side_yifan {
     position: absolute;
     z-index: 3;
-    font-size: 1em;
-    left: 3px;
-    top: 22em;
+    font-size: 12px;
+    left: 7px;
+    top: 300px;
+    -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
 
 
 
 
-/* -------------------------------------- Introduction screen --------------------------------------  */
+/* --------------------------- Introduction screen -------------------------  */
 
 .main_screen {
     height: 100%;
@@ -156,24 +153,21 @@ li:hover {
 
 /* -------- Introduction text -------- */
 
-.text {
+.intro {
     position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: 250px;
     padding-left: 190px;  
 }
 
 .change {
     color: black;
-    font-size: 7em;
-    line-height: 1em;
+    font-size: 675%;
+    line-height: 1.1em;
 }
 
 .animate {
     color: 	#ff4834;
     font-weight: 700;
-    font-size: 0.9em;
 }
 
 /* ----- Social media buttons ----- */
@@ -201,7 +195,7 @@ li:hover {
 .look {
     color: black;
     bottom: 150px;
-    font-size: 1em;
+    font-size: 90%;
 }
 
 .resume_button {
@@ -226,19 +220,16 @@ li:hover {
     position: absolute;
     width: 48em;
     height: 58em;
-    min-width: 48em;
-    min-height: 58em;
-    top: 16em;
-    right: 15em;
+    top: 16.5em;
+    left: 70em;
 }
 
 .statue_box {
     position: absolute;
     height: 58em;
     width: 41.12em;
-    left: 50%;
     top: 0;
-    transform: translate(-50%);
+    right: 0;
     background-image: url('pictures/try_2.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -274,11 +265,11 @@ li:hover {
 }
 
  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
-    left: 20%;
+    left: 60%;
   }
 
   .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev {
-    right: 90%;
+    right: 40%;
   }
 
   .carousel-inner>.item {
