@@ -265,11 +265,11 @@ li:hover {
 }
 
  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
-    left: 60%;
+    left: 68%;
   }
 
   .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev {
-    right: 40%;
+    right: 45%;
   }
 
   .carousel-inner>.item {
