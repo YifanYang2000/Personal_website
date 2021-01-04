@@ -12,10 +12,10 @@ function progression() {
 /* ----- Typed ----- */
 var typed = new Typed('.animate', {
     strings: [
-        "DEVELOPER.^2000",
-        "CREATOR.^2000",
-        "ARTIST.^2000",
-        "PIONEER.^2000"
+        "DEVELOPER^2000",
+        "CREATOR^2000",
+        "ARTIST^2000",
+        "PIONEER^2000"
     ],
     typeSpeed: 200,
     backSpeed: 100,
